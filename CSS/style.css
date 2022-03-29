@@ -1,0 +1,211 @@
+/* Font */
+@font-face {
+    font-family: poppins;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: mmfont;
+    src: url(../font/MMFont/cherry.ttf);
+}
+
+/* Site Color */
+:root {
+    --first-color: #5463FF;
+    --second-color: #ECECEC;
+    --third-color: #FFC300;
+    --fourth-color: #FF1818;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+section{
+    padding: 80px 0 !important;
+    z-index: 2;
+    position: relative;
+}
+
+/* Line */
+.line {
+    width: 30%;
+    height: 5px;
+    background-color: var(--fourth-color);
+    display: none;
+}
+
+/* Home */
+#home {
+    background-color: var(--second-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home .card {
+    background-color: var(--fourth-color);
+}
+#home .text-content {
+    color: var(--third-color);
+    padding-top: 90px !important;
+    cursor: pointer;
+}
+.text-content h2 {
+    color: var(--second-color);
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text-content p {
+    font-family: mmfont;
+    font-weight: bold;
+}
+.text-content span {
+    font-family: poppins;
+}
+.container h1 {
+    font-family: poppins;
+    color: var(--fourth-color);
+    font-weight: bold;
+    padding: 10px;
+}
+#home img {
+    transform: scale(1.5);
+}
+#home .btn {
+    background-color: var(--third-color);
+    box-shadow: none;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--fourth-color);
+    transition: all 0.5s ease-in-out;
+}
+#home .btn:hover {
+    background-color: var(--fourth-color);
+    border: 2px solid var(--third-color);
+    box-shadow: none;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--third-color);
+}
+
+/* TV */
+#television {
+    background-color: var(--second-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#television .card {
+    background-color: var(--third-color);
+}
+#television .text-content {
+    color: var(--fourth-color);
+    padding-top: 150px !important;
+    cursor: pointer;
+}
+.text-content p {
+    font-family: mmfont;
+}
+#television .btn {
+    background-color: var(--fourth-color);
+    box-shadow: none;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--third-color);
+    transition: all 0.5s ease-in-out;
+}
+#television .btn:hover {
+    background-color: var(--third-color);
+    border: 2px solid var(--fourth-color);
+    box-shadow: none;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--fourth-color);
+}
+
+/* Usage */
+#usage {
+    background-color: var(--second-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#usage #icon {
+    font-size: 30px;
+    border: 2px solid var(--fourth-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+}
+#usage .card-body {
+    font-family: mmfont;
+    text-align: center;
+}
+#usage .card {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#usage span {
+    font-family: poppins;
+}
+#usage h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: poppins;
+    font-weight: bold;
+    color: var(--fourth-color);
+}
+
+/* Media Query */
+@media (max-width: 992px) {
+    .line {
+        display: block;
+        margin-bottom: 90px !important;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* Home */
+    #home .title {
+        text-align: center !important;
+    }
+    #home .btn {
+        margin-top: 20px;
+    }
+    #home .text-content {
+        padding-top: 120px !important;
+    }
+
+    /* TV */
+    #television .text-content {
+        color: var(--fourth-color);
+        padding-top: 20px !important;
+        cursor: pointer;
+    }
+    #television img {
+        width: 250px;
+    }
+
+    /* Usage */
+    #usage .card {
+        margin-bottom: 20px;
+    }
+}
